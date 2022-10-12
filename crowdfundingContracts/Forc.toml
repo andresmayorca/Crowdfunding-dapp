@@ -1,0 +1,7 @@
+[project]
+authors = ["Andres"]
+entry = "main.sw"
+license = "Apache-2.0"
+name = "crowdfundingContracts"
+
+[dependencies]
