@@ -7,7 +7,7 @@ use std::{
 
 abi CrowdFunding {
     #[storage(read, write)]
-    fn create_project(owner: Identity, projectName: str[15], goal_amount: u64, author: str[10]) -> Project;
+    fn create_project(projectName: str[15], goal_amount: u64, author: str[10]) -> Project;
 }
 
 // Project Struct.

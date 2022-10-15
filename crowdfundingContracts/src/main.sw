@@ -21,7 +21,7 @@ storage {
 
 impl CrowdFunding for Contract {
     #[storage(read, write)]
-    fn create_project(owner: Identity, projectName: str[15], amount: u64, author: str[10]) -> Project {
+    fn create_project(projectName: str[15], amount: u64, author: str[10]) -> Project {
         let project_id = storage.project_id_counter;
         let newProject = Project {
             uniqueId: project_id,
